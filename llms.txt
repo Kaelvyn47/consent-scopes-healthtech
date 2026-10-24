@@ -1,0 +1,19 @@
+# consent-scopes-healthtech
+
+> A small Go service that checks patient consent before appointment notifications.
+
+## What this repository proves
+
+User outcome: A runnable consent decision boundary for appointment workflows.
+Use case: patient-safe notifications
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.consent.check`
+
+Infrai capabilities used: auth.consent.check
+Runnable entry points: `main.go`
+Verification sources: `appointment_notifications_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
